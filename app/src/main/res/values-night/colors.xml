@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== DARK THEME (ULTRA-MODERN) ===== -->
+    <color name="bg_main">#121212</color>
+    <color name="bg_card">#1E1E1E</color>
+    <color name="bg_card_hero">#1E1E1E</color>
+    <color name="bg_card_hero_inner">#121212</color>
+    
+    <color name="text_primary">#F2F2F2</color>
+    <color name="text_secondary">#AAAAAA</color>
+    <color name="text_hint">#777777</color>
+    <color name="text_inverse">#111111</color>
+    
+    <color name="bg_input">#2C2C2C</color>
+    <color name="divider">#333333</color>
+    <color name="divider_soft">#121212</color>
+    
+    <!-- ACCENTS (Same for both themes for brand consistency) -->
+    <color name="color_accent_gold">#E08B3D</color>
+    <color name="color_accent_gold_light">#F2C94C</color>
+    <color name="color_accent_gold_bright">#FDD052</color>
+    
+    <color name="color_accent_green">#4CAF50</color>
+    <color name="color_accent_blue">#2196F3</color>
+    <color name="color_accent_purple">#CE93D8</color> <!-- Lighter purple for dark mode -->
+    <color name="color_accent_red">#EF5350</color>   <!-- Lighter red for dark mode -->
+    <color name="color_accent_cyan">#29B6F6</color>  <!-- Lighter cyan for dark mode -->
+    <color name="color_accent_pink">#F06292</color>  <!-- Lighter pink for dark mode -->
+    <color name="color_accent_brown">#BCAAA4</color> <!-- Lighter brown for dark mode -->
+    <color name="color_accent_orange">#FFB74D</color> <!-- Lighter orange for dark mode -->
+    
+    <!-- SYSTEM & LEGACY -->
+    <color name="transparent">#00000000</color>
+    <color name="color_error">#EF5350</color>
+    <color name="color_warning">#FFB74D</color>
+    <color name="color_success">#81C784</color>
+    <color name="black_primary">#FFFFFF</color>
+</resources>

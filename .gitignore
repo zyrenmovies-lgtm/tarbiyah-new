@@ -1,0 +1,59 @@
+# ========================
+# Android / Gradle
+# ========================
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_
+*.aab
+
+# App-specific build outputs
+/app/build/
+/app/release/
+
+# ========================
+# Firebase / Secrets
+# ========================
+# JANGAN push google-services.json asli ke GitHub!
+# Gunakan GitHub Secret: GOOGLE_SERVICES_JSON
+app/google-services.json
+
+# ========================
+# Keystore (JANGAN PERNAH PUSH!)
+# ========================
+*.jks
+*.keystore
+keystore.properties
+
+# ========================
+# Kotlin / Java
+# ========================
+*.class
+*.jar
+*.war
+*.aar
+
+# ========================
+# IDE & OS
+# ========================
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ========================
+# Android Studio specific
+# ========================
+.navigation/
+captures/
+lint/

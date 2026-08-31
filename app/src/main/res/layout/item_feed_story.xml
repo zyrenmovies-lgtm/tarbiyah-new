@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginEnd="16dp">
+
+    <!-- Avatar container with a gold ring -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:cardCornerRadius="32dp"
+        app:cardBackgroundColor="@color/color_accent_gold"
+        app:cardElevation="0dp"
+        android:layout_marginBottom="8dp">
+
+        <!-- Inner white padding for the ring effect -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="30dp"
+            app:cardBackgroundColor="@color/bg_main"
+            app:cardElevation="0dp">
+
+            <!-- Actual profile image -->
+            <ImageView
+                android:id="@+id/iv_story_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@android:drawable/ic_menu_myplaces"
+                android:background="@drawable/bg_input_modern"
+                android:padding="12dp"
+                app:tint="@color/text_primary"
+                android:scaleType="centerInside" />
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_story_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ustadz"
+        android:textColor="@color/text_primary"
+        android:textSize="12sp"
+        android:maxWidth="70dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center" />
+
+</LinearLayout>

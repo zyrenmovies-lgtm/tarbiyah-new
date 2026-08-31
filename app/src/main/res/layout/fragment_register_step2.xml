@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:animateLayoutChanges="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Sekolah"
+            android:textColor="#111111"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_input_modern"
+            android:layout_marginBottom="16dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="20dp"
+                android:src="@android:drawable/ic_menu_sort_by_size"
+                app:tint="#8D6E63" />
+            <EditText
+                android:id="@+id/et_school"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingStart="56dp"
+                android:paddingEnd="20dp"
+                android:hint="Nama Madrasah / Sekolah"
+                android:textColorHint="#999999"
+                android:textColor="#111111"
+                android:textSize="16sp"
+                android:inputType="textCapWords"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_input_modern"
+            android:layout_marginBottom="16dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="20dp"
+                android:src="@android:drawable/ic_menu_agenda"
+                app:tint="#8D6E63" />
+            <AutoCompleteTextView
+                android:id="@+id/spinner_level"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingStart="56dp"
+                android:paddingEnd="48dp"
+                android:hint="Pilih Jenjang"
+                android:textColorHint="#999999"
+                android:textColor="#111111"
+                android:textSize="16sp"
+                android:inputType="none"
+                android:focusable="false"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="20dp"
+                android:src="@android:drawable/arrow_down_float"
+                app:tint="#CCCCCC" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_input_modern"
+            android:layout_marginBottom="32dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="20dp"
+                android:src="@android:drawable/ic_menu_sort_by_size"
+                app:tint="#8D6E63" />
+            <AutoCompleteTextView
+                android:id="@+id/spinner_grade"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingStart="56dp"
+                android:paddingEnd="48dp"
+                android:hint="Pilih Kelas"
+                android:textColorHint="#999999"
+                android:textColor="#111111"
+                android:textSize="16sp"
+                android:inputType="none"
+                android:focusable="false"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="20dp"
+                android:src="@android:drawable/arrow_down_float"
+                app:tint="#CCCCCC" />
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kontak WhatsApp"
+            android:textColor="#111111"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_modern">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginStart="20dp"
+                    android:src="@android:drawable/ic_menu_call"
+                    app:tint="#8D6E63" />
+                <EditText
+                    android:id="@+id/et_student_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:paddingStart="56dp"
+                    android:paddingEnd="20dp"
+                    android:hint="WA Siswa (08xxx)"
+                    android:textColorHint="#999999"
+                    android:textColor="#111111"
+                    android:textSize="16sp"
+                    android:inputType="phone"/>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btn_send_otp_student"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:text="Kirim"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:background="@drawable/bg_button_primary_modern"
+                app:backgroundTint="@null"
+                android:layout_marginStart="12dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:elevation="8dp"
+                android:stateListAnimator="@null"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_otp_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_input_modern"
+            android:backgroundTint="#FFF8E1"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚠️"
+                android:textSize="16sp"
+                android:layout_marginEnd="12dp"/>
+            <TextView
+                android:id="@+id/tv_otp_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum diverifikasi"
+                android:textColor="#F57F17"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_input_modern"
+            android:layout_marginBottom="16dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="20dp"
+                android:src="@android:drawable/ic_menu_call"
+                app:tint="#8D6E63" />
+            <EditText
+                android:id="@+id/et_parent_contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingStart="56dp"
+                android:paddingEnd="20dp"
+                android:hint="WA Orang Tua (08xxx)"
+                android:textColorHint="#999999"
+                android:textColor="#111111"
+                android:textSize="16sp"
+                android:inputType="phone"/>
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
+

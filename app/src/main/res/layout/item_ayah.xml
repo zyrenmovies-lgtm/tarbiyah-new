@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/bg_card"
+    android:layout_marginBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Ayah Number -->
+        <FrameLayout
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_input_modern">
+            <TextView
+                android:id="@+id/tv_ayah_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="1"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Arabic Text -->
+        <TextView
+            android:id="@+id/tv_ayah_arabic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginStart="16dp"
+            android:text="بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ"
+            android:textColor="@color/text_primary"
+            android:textSize="28sp"
+            android:textAlignment="viewEnd"
+            android:gravity="end"
+            android:lineSpacingExtra="8dp" />
+    </LinearLayout>
+
+    <!-- Transliteration (Latin) -->
+    <TextView
+        android:id="@+id/tv_ayah_latin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="bismillaahir-rahmaanir-rahiim"
+        android:textColor="@color/color_accent_orange"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <!-- Translation -->
+    <TextView
+        android:id="@+id/tv_ayah_translation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Dengan nama Allah Yang Maha Pengasih, Maha Penyayang."
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"
+        android:lineSpacingExtra="4dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/divider" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== LIGHT THEME (ULTRA-MODERN) ===== -->
+    <color name="bg_main">#FAFAFA</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="bg_surface">#FFFFFF</color>
+    <color name="bg_card_hero">#FFFFFF</color>
+    <color name="bg_card_hero_inner">#F5F7F9</color>
+    
+    <color name="text_primary">#111111</color>
+    <color name="text_secondary">#888888</color>
+    <color name="text_hint">#999999</color>
+    <color name="text_inverse">#FFFFFF</color>
+    
+    <color name="bg_input">#F5F7F9</color>
+    <color name="divider">#E0E6ED</color>
+    <color name="divider_soft">#FAFAFA</color>
+    
+    <!-- ACCENTS -->
+    <color name="color_accent_gold">#E08B3D</color>
+    <color name="color_accent_gold_light">#F2C94C</color>
+    <color name="color_accent_gold_bright">#FDD052</color>
+    
+    <color name="color_accent_green">#4CAF50</color>
+    <color name="color_accent_blue">#2196F3</color>
+    <color name="color_accent_purple">#9C27B0</color>
+    <color name="color_accent_red">#F44336</color>
+    <color name="color_accent_cyan">#03A9F4</color>
+    <color name="color_accent_pink">#E91E63</color>
+    <color name="color_accent_brown">#8D6E63</color>
+    <color name="color_accent_orange">#FF9800</color>
+    
+    <!-- SYSTEM & LEGACY (Keep some for legacy compatibility) -->
+    <color name="transparent">#00000000</color>
+    <color name="color_error">#F44336</color>
+    <color name="color_warning">#FF9800</color>
+    <color name="color_success">#4CAF50</color>
+    <color name="black_primary">#111111</color>
+</resources>

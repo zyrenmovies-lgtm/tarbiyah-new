@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.tarbiyah.ailearn.ui.home.HomeFragment"
+        android:label="Beranda">
+        <action
+            android:id="@+id/action_homeFragment_to_quranFragment"
+            app:destination="@id/quranFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_belajarDashboardFragment"
+            app:destination="@id/belajarDashboardFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aiTutorFragment"
+        android:name="com.tarbiyah.ailearn.ui.aiTutor.AiTutorFragment"
+        android:label="AI Tutor" />
+
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.tarbiyah.ailearn.ui.feed.FeedFragment"
+        android:label="Komunitas" />
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.tarbiyah.ailearn.ui.chat.ChatFragment"
+        android:label="Chat" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.tarbiyah.ailearn.ui.profile.ProfileFragment"
+        android:label="Profil" />
+
+    <fragment
+        android:id="@+id/quranFragment"
+        android:name="com.tarbiyah.ailearn.ui.quran.QuranFragment"
+        android:label="Al-Qur'an">
+        <action
+            android:id="@+id/action_quranFragment_to_quranReadFragment"
+            app:destination="@id/quranReadFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quranReadFragment"
+        android:name="com.tarbiyah.ailearn.ui.quran.QuranReadFragment"
+        android:label="Baca Surah">
+        <argument
+            android:name="nomorSurah"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="namaSurah"
+            app:argType="string"
+            android:defaultValue="Al-Fatihah" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.tarbiyah.ailearn.ui.notification.NotificationFragment"
+        android:label="Notifikasi" />
+
+    <fragment
+        android:id="@+id/belajarDashboardFragment"
+        android:name="com.tarbiyah.ailearn.ui.quiz.BelajarDashboardFragment"
+        android:label="Pusat Belajar">
+        <action
+            android:id="@+id/action_belajarDashboardFragment_to_quizFragment"
+            app:destination="@id/quizFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.tarbiyah.ailearn.ui.quiz.QuizFragment"
+        android:label="Kuis Harian">
+        <action
+            android:id="@+id/action_quizFragment_to_quizResultFragment"
+            app:destination="@id/quizResultFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quizResultFragment"
+        android:name="com.tarbiyah.ailearn.ui.quiz.QuizResultFragment"
+        android:label="Hasil Kuis">
+        <action
+            android:id="@+id/action_quizResultFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="SCORE"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="TOTAL_QUESTIONS"
+            app:argType="integer"
+            android:defaultValue="5" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mosque silhouette vector -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="180dp"
+    android:viewportWidth="360"
+    android:viewportHeight="180">
+
+    <!-- Left minaret -->
+    <path
+        android:pathData="M30,180 L30,80 L38,80 L38,60 L34,55 L34,30 L36,28 L36,20 L34,18 L34,10 L36,8 L36,0 L38,0 L38,8 L40,10 L40,18 L38,20 L38,28 L40,30 L40,55 L36,60 L36,80 L46,80 L46,180 Z"
+        android:fillColor="#252838"
+        android:fillAlpha="0.8"/>
+
+    <!-- Right minaret -->
+    <path
+        android:pathData="M314,180 L314,80 L322,80 L322,60 L318,55 L318,30 L320,28 L320,20 L318,18 L318,10 L320,8 L320,0 L322,0 L322,8 L324,10 L324,18 L322,20 L322,28 L324,30 L324,55 L320,60 L320,80 L330,80 L330,180 Z"
+        android:fillColor="#252838"
+        android:fillAlpha="0.8"/>
+
+    <!-- Main dome -->
+    <path
+        android:pathData="M60,180 L60,120 Q60,60 180,60 Q300,60 300,120 L300,180 Z"
+        android:fillColor="#252838"
+        android:fillAlpha="0.9"/>
+
+    <!-- Center small dome -->
+    <path
+        android:pathData="M155,60 Q180,30 205,60 Z"
+        android:fillColor="#252838"
+        android:fillAlpha="0.9"/>
+
+    <!-- Crescent on top -->
+    <path
+        android:pathData="M178,22 A10,10 0 1,1 192,28 A7,7 0 1,0 178,22 Z"
+        android:fillColor="#F2C94C"/>
+
+    <!-- Side small domes -->
+    <path
+        android:pathData="M60,120 Q80,95 100,120 Z"
+        android:fillColor="#252838"
+        android:fillAlpha="0.9"/>
+    <path
+        android:pathData="M260,120 Q280,95 300,120 Z"
+        android:fillColor="#252838"
+        android:fillAlpha="0.9"/>
+
+</vector>

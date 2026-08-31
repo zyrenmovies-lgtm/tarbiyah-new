@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/transparent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informasi Dasar"
+            android:textColor="#111111"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Full Name -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_input_modern"
+            android:layout_marginBottom="16dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="20dp"
+                android:src="@android:drawable/ic_menu_myplaces"
+                app:tint="#8D6E63" />
+            <EditText
+                android:id="@+id/et_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingStart="56dp"
+                android:paddingEnd="20dp"
+                android:hint="Nama Lengkap"
+                android:textColorHint="#999999"
+                android:textColor="#111111"
+                android:textSize="16sp"
+                android:inputType="textPersonName"/>
+        </FrameLayout>
+
+        <!-- Username -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_input_modern"
+            android:layout_marginBottom="16dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="20dp"
+                android:src="@android:drawable/ic_menu_info_details"
+                app:tint="#8D6E63" />
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingStart="56dp"
+                android:paddingEnd="20dp"
+                android:hint="Username"
+                android:textColorHint="#999999"
+                android:textColor="#111111"
+                android:textSize="16sp"
+                android:inputType="textNoSuggestions"/>
+        </FrameLayout>
+
+        <!-- Email -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_input_modern"
+            android:layout_marginBottom="16dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="20dp"
+                android:src="@android:drawable/ic_dialog_email"
+                app:tint="#8D6E63" />
+            <EditText
+                android:id="@+id/et_email_reg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingStart="56dp"
+                android:paddingEnd="20dp"
+                android:hint="Alamat Email"
+                android:textColorHint="#999999"
+                android:textColor="#111111"
+                android:textSize="16sp"
+                android:inputType="textEmailAddress"/>
+        </FrameLayout>
+
+        <!-- Password -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_input_modern"
+            android:layout_marginBottom="16dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="20dp"
+                android:src="@android:drawable/ic_secure"
+                app:tint="#8D6E63" />
+            <EditText
+                android:id="@+id/et_password_reg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingStart="56dp"
+                android:paddingEnd="56dp"
+                android:hint="Kata Sandi"
+                android:textColorHint="#999999"
+                android:textColor="#111111"
+                android:textSize="16sp"
+                android:inputType="textPassword"/>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="20dp"
+                android:src="@android:drawable/ic_menu_view"
+                app:tint="#CCCCCC" />
+        </FrameLayout>
+
+        <!-- Confirm Password -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_input_modern"
+            android:layout_marginBottom="16dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="20dp"
+                android:src="@android:drawable/ic_secure"
+                app:tint="#8D6E63" />
+            <EditText
+                android:id="@+id/et_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingStart="56dp"
+                android:paddingEnd="56dp"
+                android:hint="Konfirmasi Sandi"
+                android:textColorHint="#999999"
+                android:textColor="#111111"
+                android:textSize="16sp"
+                android:inputType="textPassword"/>
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
+
